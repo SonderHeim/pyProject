@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/picture.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body class="body1">
+<nav class="navbar navbar-expand-lg" style="background-color: #243f5c">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: white">Поиск медведей.ru</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/Home" style="color: white"> Главная страница </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/aboutTeam" style="color: white"> О команде </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/BearsHome" style="color: white"> Найди своего мишку </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div style="margin-top: 6%"></div>
+<form id="form" action="" method="post" enctype="multipart/form-data">
+  <div class="box5" style="margin:10px auto;">
+  <div class="drop-zone" style="margin:10px auto; padding-top: 80px;">
+    <!-- <label for="choose_file"> -->
+    <!-- onchange="this.form.submit();" -->
+    <input type="file" name="file" id="choose_file" class="drop-zone__input">
+    <p style="font-size: 24px; text-decoration: none; color: white"><span>Добавить файл</span> или перетащить файл сюда </p>
+    <!-- </label> -->
+  </div>
+  <div style="margin-top: 20%"></div>
+  <div class="buttons text-center">
+    <button type="submit" class="main-btn">Загрузить фото</button></div>
+    </div>
+</form>
+<!-- <form enctype="multipart/form-data" method="post">
+   <p><input type="file" name="f">
+   <input type="submit" value="Отправить"></p>
+</form> -->
+</body>
+</html>
