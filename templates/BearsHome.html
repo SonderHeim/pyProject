@@ -13,29 +13,29 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body class="body1">
-<nav class="navbar navbar-expand-lg" style="background-color: #243f5c">
+<nav class="navbar navbar-expand-lg" style="background-color: #243f5c;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: white">Поиск медведей.ru</a>
+    <a class="navbar-brand" href="#" style="color: white; font-size: 22px">Поиск медведей.ru</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Home" style="color: white"> Главная страница </a>
+          <a class="nav-link active" aria-current="page" href="/Home" style="color: white; font-size: 18px"> Главная страница </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/aboutTeam" style="color: white"> О команде </a>
+          <a class="nav-link active" aria-current="page" href="/aboutTeam" style="color: white; font-size: 18px"> О команде </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/BearsHome" style="color: white"> Найди своего мишку </a>
+          <a class="nav-link active" aria-current="page" href="/BearsHome" style="color: white; font-size: 18px"> Найди своего мишку </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div style="margin-top: 6%"></div>
-<form id="form" action="" method="post" enctype="multipart/form-data">
+<div style="margin-top: 6%; padding-top: 8%"></div>
+<form id="form" method="post" enctype="multipart/form-data">
   <div class="box5" style="margin:10px auto;">
   <div class="drop-zone" style="margin:10px auto; padding-top: 80px;">
     <!-- <label for="choose_file"> -->
@@ -53,5 +53,8 @@
    <p><input type="file" name="f">
    <input type="submit" value="Отправить"></p>
 </form> -->
+{% block script %}
+  <script type="text/javascript" src="{{ url_for('static', filename='css/javascript/first.js') }}"></script>
+{% endblock %}
 </body>
 </html>

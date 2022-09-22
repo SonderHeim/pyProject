@@ -8,6 +8,7 @@ def bearsHome():
     return render_template('BearsHome.html')
 
 @app.route("/Home")
+@app.route("/")
 def home():
     return render_template('Home.html')
 
